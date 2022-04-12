@@ -54,9 +54,9 @@
         placeholder="Search"
         aria-label="Search"
       />
-      <button class="btn btn-outline-success" type="submit">
-        Search
-      </button>
+      <button type="button" class="btn btn-secondary" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Click here to search">
+  Search
+</button>
       </form>
   </div>
 
@@ -72,7 +72,7 @@
     <button class="buttonMode" onclick="myFunction()"></button>
     <div>
       <div class="jumbotron">
-        <h1 class="text-center pt-5 mx-auto">Welcome to my portfolio</h1>      
+        <span class="badge bg-light text-dark" >Welcome to my Portfolio</span>    
         <p class="text-center pt-5 px-5">Hello everyone, I'm Durga, a professional developer. I pursuing my masters in information systems at northeastern university.</p>
       </div>
   </section>
@@ -103,6 +103,18 @@
               I have an active and dynamic approach to work and getting things done. I am determined and decisive.
               I identify and develop opportunities.
             </p>
+			<div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">Below are my Interpersonal Skills:</a>
+
+ 
+  <a href="#" class="list-group-item list-group-item-action list-group-item-secondary">Problem-solving</a>
+
+  <a href="#" class="list-group-item list-group-item-action list-group-item-danger">Decision-making.</a>
+  <a href="#" class="list-group-item list-group-item-action list-group-item-warning">Assertiveness</a>
+ 
+</div>
+
+
           </div>
         </div>
       </div>
@@ -112,9 +124,9 @@
           <div class="date">2021</div>
           <i class="icon fa fa-home"></i>
           <div class="content">
-            <h2>RSO Proctor</h2>
+           <h2>Proctor</h2>
             <p>
-              Started my part time as a RSO proctor in University under Residential Security Office
+              Started my part time as a RSO proctor in University
             </p>
           </div>
         </div>
@@ -142,7 +154,7 @@
           <div class="date">18 May</div>
           <i class="icon fa fa-running"></i>
           <div class="content">
-            <h2>Infosys Cloud Administrator</h2>
+            <h2>Infosys Cloud Admin</h2>
             <p>
               Worked for 1 year as a cloud admin in Infosys
             </p>
@@ -164,7 +176,7 @@
           <div class="content">
             <h2>Bachelors Degree</h2>
             <p>
-              Completed my bachelors degree in Electronics and Communication enginnering from SNIST
+              Completed my bachelors degree in Electronics and Comm. enginnering from SNIST
             </p>
           </div>
         </div>
@@ -285,7 +297,9 @@
 
   <section>
     <h1 class="text-center my-5 bg-primary" style="color: chartreuse;">Certifications</h1>
-  
+  <div class="progress" style="height: 1px;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+</div>
     <div class="row justify-content-md-center mb-5">
       <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 p-3 mx-auto">
         <a href="#">
@@ -352,6 +366,9 @@
         </a>
       </div> -->
     </div>
+	<div class="progress" style="height: 1px;">
+  <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
+</div>
   </section>
 
   <section id="contactPage">
@@ -361,7 +378,7 @@
 
       <div class="contactsection pt-3">
         <p class="fa fa-map-marker w3-xxlarge w3-margin-right"> Location : Boston, US</p>
-        Phone: <a href="tel:+00 151515"> +00 151515 </a><br>
+        <p>Phone: <a href="tel:+00 151515"> +00 151515 </a><br></p>
         Email: <a href="mailto:mail@mail.com"> mail@mail.com </a>
       </div>
       <p></p>Send me a message:</p>
@@ -371,27 +388,57 @@
 
         <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message">
         </p>
-        <button type="submit">
-          <i class="fa fa-paper-plane">SEND MESSAGE</i>
-        </button>
+		
+		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Send Message</button>
+
+<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasTopLabel">Message Sent</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>	
+</div>
       </form>
     </div>
   </section>
 
   <section class="text-center my-2">
-    <h2>Social Media Buttons</h2>
-
+  
+   <div class="card">
+  <div class="card-body">
+ 
+  Social Media
+  
+<p>
+</p>	
     <!-- Add font awesome icons -->
     <a href="#" class="fa fa-facebook"></a>
     <a href="#" class="fa fa-twitter"></a>
     <a href="#" class="fa fa-google"></a>
     <a href="#" class="fa fa-linkedin"></a>
 
+
+</div>
+</div>
   </section>
 
 
   <footer class="footer">
     <p>&copy; Durga 2020</p>
+	<div class="spinner-grow text-primary" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="visually-hidden">Loading...</span>
+</div>
   </footer>
 </body>
 
